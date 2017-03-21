@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mortgagecalc.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TableRow android:id="@+id/tableRow0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/propertyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/property_type" />
+
+            <Spinner
+                android:id="@+id/propertyTypeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/streetAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/street_address" />
+
+            <EditText
+                android:id="@+id/streetAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city" />
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state" />
+
+            <Spinner
+                android:id="@+id/stateSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zip" />
+
+            <EditText
+                android:id="@+id/zipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/housePriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/housePrice" />
+
+            <EditText
+                android:id="@+id/housePriceEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="@string/doubleZero"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/downPaymentAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/downPaymentAmount" />
+
+            <EditText
+                android:id="@+id/downPaymentAmountEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="@string/doubleZero" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/annualInterestRateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annualInterestRate" />
+
+            <EditText
+                android:id="@+id/annualInterestRateEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="@string/doubleZero" />
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lengthOfMortgageLoanTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lengthOfMortgageLoan" />
+
+            <EditText
+                android:id="@+id/lengthOfMortgageLoanEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="@string/intZero" />
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="@dimen/tagButtonWidth"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="@dimen/tagButtonWidth"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/monthlyPaymentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthlyPayment" />
+
+            <EditText
+                android:id="@+id/monthlyPaymentEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:longClickable="false"
+                android:text="@string/doubleZero"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="@dimen/tagButtonWidth"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+
