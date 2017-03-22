@@ -2,6 +2,7 @@ package com.example.mortgagecalc;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.location.Address;
 import android.location.Geocoder;
@@ -26,16 +27,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     Marker marker;
+    DatabaseHelper dh = new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
     }
 
 
@@ -51,33 +53,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        DatabaseHelper dh = new DatabaseHelper(this);
+        mMap.clear();
+
         LatLng point;
         List<Marker> markers = new ArrayList<Marker>();
-        int padding = 0; // offset from edges of the map in pixels
+        int padding = 200; // offset from edges of the map in pixels
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
 
-        if(mMap != null){
+        if (mMap != null) {
 
             if (marker != null) {
                 marker.remove();
             }
 
             Cursor cursor = dh.getAllData();
-            if (cursor.moveToFirst()){
-                do{
-                    String data = cursor.getString(2) + " " + cursor.getString(3)+ " "+ cursor.getString(4)+" "+ cursor.getString(5);
+            if (cursor.moveToFirst()) {
+                do {
+                    String data = cursor.getString(2) + " " + cursor.getString(3) + " " + cursor.getString(4) + " " + cursor.getString(5);
                     point = getLocationFromAddress(data);
-                    System.out.println("LatLong: "+ point);
+                    System.out.println("LatLong: " + point);
 
-                    MarkerOptions options = new MarkerOptions()
-                            .title(cursor.getString(3) +" " +cursor.getString(4))
-                            .position(point);
+                    if (point != null) {
+                        MarkerOptions options = new MarkerOptions()
+                                .title("Property Type: " + cursor.getString(1) + "\n" + data + "\n"
+                                        + "Loan amount: " + cursor.getString(8) + "\nAPR: " + cursor.getString(9) + "\nMonthly payment: " + cursor.getString(11))
+                                .position(point);
 
-                    marker = mMap.addMarker(options);
-                    markers.add(marker);
+                        marker = mMap.addMarker(options);
+                        marker.setTag(Integer.parseInt(cursor.getString(0)));
+                        markers.add(marker);
+                    }
 
-                } while(cursor.moveToNext());
+
+                } while (cursor.moveToNext());
 
                 for (Marker m : markers) {
                     builder.include(m.getPosition());
@@ -86,37 +94,81 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
                 mMap.moveCamera(cu);
                 mMap.animateCamera(cu);
+
             }
 
         }
 
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+
+                final int a = (int) marker.getTag();
+                final String message = marker.getTitle();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
+
+                builder
+                        .setTitle("Info")
+                        .setMessage(message)
+                        .setPositiveButton("CLOSE", new DialogInterface.OnClickListener() {
+
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        })
+                        .setNeutralButton("DELETE", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dh.removeRow(a);
+                            }
+                        })
+                        .setNegativeButton("EDIT", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //launch main activity with data
+                                Intent form = new Intent(MapsActivity.this, MainActivity.class);
+                                form.putExtra("rowid", a);
+                                startActivity(form);
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+
+                dialog.show();
+                return true;
+            }
+        });
+
     }
 
 
-    public LatLng getLocationFromAddress(String strAddress){
+    public LatLng getLocationFromAddress(String strAddress) {
 
         Geocoder coder = new Geocoder(this);
         List<Address> address;
         LatLng p1 = null;
 
         try {
-            address = coder.getFromLocationName(strAddress,5);
-            System.out.println("address: "+ address);
+            address = coder.getFromLocationName(strAddress, 5);
             if (address.size() == 0) {
                 return null;
             }
-            Address location= address.get(0);
+            Address location = address.get(0);
             location.getLatitude();
             location.getLongitude();
 
-            p1 = new LatLng(location.getLatitude() , location.getLongitude());
-        }
-        catch (IOException ex) {
+            p1 = new LatLng(location.getLatitude(), location.getLongitude());
+        } catch (IOException ex) {
 
             ex.printStackTrace();
         }
         return p1;
     }
-    }
+
+}
 
 

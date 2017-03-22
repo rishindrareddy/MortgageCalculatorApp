@@ -11,6 +11,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.0_b6bf08764b6823afddec1133d6dc4004c68e078c/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_68d47ec7193f7c65fde982c5146e3a4e1a248b9e.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -27,6 +36,24 @@
         revision="25.0.2"
         sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.0_b2a97c2379b475b05cb83351e896b4e2c2bb11e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-9.6.0_fd336ea483f3a864e8a95151b24369c9dbb3bad9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f4540ad2a6e3741694e9332f0c20607c780fae6c">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-9.6.0_f125553f9c0889e1f8bc959690af9f303b90978b.jar" />
     </item>
     <item
         is-multidex="true"
@@ -47,6 +74,42 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.0_2123634aea5a75cd2b9cc0b794107e9a2c1b755f/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12e94600a0ea3beae6ea0f1d18a0768ded5bc1ae">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.6.0_8a50037ae98fb503fdea35db7c16f33d0e623cb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.6.0_e1498fc2e22eee7e1cafa7d2cd2bcfa55ff12260.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-9.6.0_6fd996e08df40ed162e6b857f43610ead9463aa5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c48db997d87eb3e3ad47713cfbfe7cb878a2e66c">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-9.6.0_3ae9baa540f6102bb155a0b7a9dea1a7af69f384.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -54,6 +117,24 @@
         revision="25.0.2"
         sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_a92e9a7b7b4bf8e681345ecf919d3e790d8029d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4cfc5a74aa9453cbec685cdbcb3e3f3539b483bd">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.6.0_7231b2bd53916b41bf301d8efcf33f17dc6957a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26cd46f7bc6e1f269062b61269317a29329a9a7b">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-awareness-9.6.0_476a851564800ad7d838891ea895f1277f74c5df.jar" />
     </item>
     <item
         is-multidex="true"
@@ -74,6 +155,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_0909c7dcfb373e7883dc81c2213671fd09de0db7/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a5da6fc5a6f39aee309ae6ae670e1b942759dc51">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-9.6.0_7b98fb8ebe9d1523366cd288bd6dc03c12ed2ee1.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -81,6 +171,60 @@
         revision="25.0.2"
         sha1="a723c85825d9591baec200523c10662e30c8bed7">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.0_f2455ae68fb331698cdfda5aac32d0f01f543327/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-9.6.0_dd3874987122722016824f1d9fe8d993fbbc634c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-9.6.0_ebfd27db1ae51166436b485862a1b1f6b2629a26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="415336382149f2a79eb80599e340e188f6724d6d">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-9.6.0_de713104088d1ded3ab710c7b43ae5fb8beccb58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_3761fc2c01117590e0ab7460831e7e5cb23403d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.6.0_38cd307105e61f620087d9ce2a3c91f0343c5033.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.6.0_ae629a85e2e5c69a5912063878434735e515b6d5.jar" />
     </item>
     <item
         is-multidex="true"
@@ -99,6 +243,24 @@
         revision="25.0.2"
         sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_2b8fbe958381497f390211dbeaf6fc809efe58a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.6.0_747cb14caceceb993ffb922c00964c26557d2844.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-9.6.0_dce4fb7a6752cf8ebd5e65bd11ef2820a9ecaed5.jar" />
     </item>
     <item
         is-multidex="true"
@@ -137,6 +299,42 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.0_db5c70332d498515c27bb948c7d84a4690f62fd1/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.1_b6e02f8c7781476c485548286663fe737ef8d651.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.6.0_01821ea803455bb8f152472f4086c2b89ea96484.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.6.0_ae2424d5c90d804387c3a3f70c56557019d0de86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.6.0_c232c681159b214797efe53f4295e0f93bb5be6c.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
         jumboMode="true"
@@ -144,6 +342,15 @@
         revision="25.0.2"
         sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.1_2b72dca1d0e066b3ce59c31bb63edc1583d38e14/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_da0957ad9d677161d1d37fe9b0b09d2e5f4e8917.jar" />
     </item>
     <item
         is-multidex="true"
@@ -155,6 +362,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.0_f004b129a8277edccf1de021173103efe9c9e9f8/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.6.0_f1baedb919fe80e801e8837bf898e7ca04bd2027.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -162,6 +378,15 @@
         revision="25.0.2"
         sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.0_0c8a31d86900e1a90853ad49054ab948a9b4164e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.6.0_b2a97c2379b475b05cb83351e896b4e2c2bb11e3.jar" />
     </item>
     <item
         is-multidex="true"
@@ -182,6 +407,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.0_7231b2bd53916b41bf301d8efcf33f17dc6957a3/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_9240da58a4c3f4703a27c7e97f300dee8690ed50.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -200,6 +434,24 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.6.0_f125553f9c0889e1f8bc959690af9f303b90978b/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_a1536cf84720c8e6f297cc8390a4e0ac6bd09018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-9.6.0_0c8a31d86900e1a90853ad49054ab948a9b4164e.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -207,6 +459,15 @@
         revision="25.0.2"
         sha1="d1e7862a5a7675940acb6efcab34b38de89c9e18">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.0_5cb6155623d7998e7efde33f21aca06822754b6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.1_f92c6053474bb5265f4479dd33a6c0330dce42d9.jar" />
     </item>
     <item
         is-multidex="true"
@@ -218,6 +479,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.0_476a851564800ad7d838891ea895f1277f74c5df/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-9.6.0_a92e9a7b7b4bf8e681345ecf919d3e790d8029d5.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
         jumboMode="true"
@@ -225,6 +495,15 @@
         revision="25.0.2"
         sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_3761fc2c01117590e0ab7460831e7e5cb23403d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_60a2843ce6373ba2dba67fd879cc56b9177b557a.jar" />
     </item>
     <item
         is-multidex="true"
@@ -245,6 +524,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.0_6e3e609ccf8d2913c922159112c9fd5b47cf6c58/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.6.0_66e74c6e0f5f714808ce864d99ca47d2604df105.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -254,6 +542,24 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.0_dd3874987122722016824f1d9fe8d993fbbc634c/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_2b8fbe958381497f390211dbeaf6fc809efe58a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a343e17f154f513a09c12946fae0f172be079ec">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.6.0_7efabb6602c065ab363f2b0ee5e223e1e130e861.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -261,6 +567,15 @@
         revision="25.0.2"
         sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.0_2f63e5853a4bc13411e7018819738c7a5786c0b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="938ba83fbb26987368049237e47718d56e91e222">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-9.6.0_2e026311b2306a81475b8ff0fbfcff22b712d619.jar" />
     </item>
     <item
         is-multidex="true"
@@ -335,6 +650,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.0_f0071b59558cc2afecea932ef3e6c69fceac3727/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-24.0.0_3bda7ff5f4566bffdc0b0064999d0dabd2c59a73.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
         jumboMode="true"
@@ -380,6 +704,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.6.0_7f581a0e4a1f802b17c2250feafa3fd0fe1a4a51/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d1e7862a5a7675940acb6efcab34b38de89c9e18">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.6.0_5cb6155623d7998e7efde33f21aca06822754b6a.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -387,6 +720,24 @@
         revision="25.0.2"
         sha1="5243af50631020511cf2403789678149b1a319e6">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.0_24cfb326254d5fc1ab0d69f850c61eafb88eec3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.6.0_abca3b882746e1106f0594589d3a5e4e1b81722c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_7b57d7527bbfd23ebba7a71e39440ad59f09620a.jar" />
     </item>
     <item
         is-multidex="true"
@@ -398,6 +749,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.0_66e74c6e0f5f714808ce864d99ca47d2604df105/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6079f942bb34faee179b4c46396a26fbbfc43e5d">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-9.6.0_6e3e609ccf8d2913c922159112c9fd5b47cf6c58.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -405,6 +765,24 @@
         revision="25.0.2"
         sha1="73699fb64ea3de4a43d0f5c37dc525a5e1341ca1">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.0_1585bc66fa45aa3f169cb39910f70239f11ff47f/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-9.6.0_2f63e5853a4bc13411e7018819738c7a5786c0b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce5313bb5ccc0c1e10c995e4efb2f2b08c848b39">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.6.0_13049267eacbbde4ce3aef041033df9e1b5b9ec3.jar" />
     </item>
     <item
         is-multidex="true"
@@ -425,6 +803,33 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.0_7efabb6602c065ab363f2b0ee5e223e1e130e861/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-9.6.0_207b7b7cc8733c8421337aeb1dff9b6cff6d375a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.6.0_5d5be2f7bd0db350d52f6616445479a01aa4d6c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.6.0_df19d40476607a8e9f176dab3a798a5db226bcbf.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -432,6 +837,24 @@
         revision="25.0.2"
         sha1="266e4ac186afacc3b220a0cf8382348283b42407">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.0_3aa9f69ce3992bec5d0a6fff0b3faee5bf90b676/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-instantapps-9.6.0_7604370f7fbb1cc3aa496e2c685b08f3c77f7f69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97e3259dcdaa9b33014a849f6d3bdbb4ef478383">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-9.6.0_f0071b59558cc2afecea932ef3e6c69fceac3727.jar" />
     </item>
     <item
         is-multidex="true"
@@ -452,6 +875,33 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_3bda7ff5f4566bffdc0b0064999d0dabd2c59a73/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-24.0.0_008384a9abb7ff5dcce233c2870a48422a638626.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f5c557145ddef094005eb73d72a7eaf330a0cf1">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-9.6.0_7f581a0e4a1f802b17c2250feafa3fd0fe1a4a51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_e47493df331df400654189f2316becff2506d3a6.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
         jumboMode="true"
@@ -459,6 +909,15 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_7b57d7527bbfd23ebba7a71e39440ad59f09620a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3270d392adef5decc7bace1a3c2e749bec7bf19e">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-places-9.6.0_b6bf08764b6823afddec1133d6dc4004c68e078c.jar" />
     </item>
     <item
         is-multidex="true"
@@ -470,6 +929,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.0_6fd996e08df40ed162e6b857f43610ead9463aa5/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea5537e2a88ce0497d3e2272b1cf93f2e0c77b0d">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.6.0_2123634aea5a75cd2b9cc0b794107e9a2c1b755f.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
         jumboMode="true"
@@ -479,6 +947,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_68d47ec7193f7c65fde982c5146e3a4e1a248b9e/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.0_bd48a7486020917bad9dcedd8437b7a6f6731899.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -486,6 +963,24 @@
         revision="25.0.2"
         sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.0_ae629a85e2e5c69a5912063878434735e515b6d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_0909c7dcfb373e7883dc81c2213671fd09de0db7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5243af50631020511cf2403789678149b1a319e6">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.6.0_24cfb326254d5fc1ab0d69f850c61eafb88eec3b.jar" />
     </item>
     <item
         is-multidex="true"
@@ -506,6 +1001,15 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_e1498fc2e22eee7e1cafa7d2cd2bcfa55ff12260/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a723c85825d9591baec200523c10662e30c8bed7">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.6.0_f2455ae68fb331698cdfda5aac32d0f01f543327.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -515,12 +1019,21 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.0_ebfd27db1ae51166436b485862a1b1f6b2629a26/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73699fb64ea3de4a43d0f5c37dc525a5e1341ca1">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-9.6.0_1585bc66fa45aa3f169cb39910f70239f11ff47f.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a9746017500e31efd1a5aa6ed8850f5cfba91b81">
+        sha1="558647d5b17387988f9e6310ffc38cee92d2d129">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d7922e1a42116c31af524b7e609682be9a03d759/classes.dex" />
     </item>
     <item
@@ -533,6 +1046,24 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_38cd307105e61f620087d9ce2a3c91f0343c5033/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_d544f16c4fccda1da2cb04621ff3c685ce79f737.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-9.6.0_c7dda791d7e313e8ff1ca755f592ecb60f3e3cad.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -540,6 +1071,15 @@
         revision="25.0.2"
         sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.0_207b7b7cc8733c8421337aeb1dff9b6cff6d375a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_baaad37a5945051ddd096f3d634f46f2d4d538dc/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -551,12 +1091,21 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_747cb14caceceb993ffb922c00964c26557d2844/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="266e4ac186afacc3b220a0cf8382348283b42407">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-9.6.0_3aa9f69ce3992bec5d0a6fff0b3faee5bf90b676.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7c55b67b658190bcebe51d390c5e2f9fe67fdc63">
+        sha1="edd1d7de55ce2ce45201e40c0300cd2afae4e1d2">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f3e4e4563004e58c6dc988e858ddb9ab74bb9c3b/classes.dex" />
     </item>
     <item
@@ -587,6 +1136,33 @@
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.0_01821ea803455bb8f152472f4086c2b89ea96484/classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.1_2b72dca1d0e066b3ce59c31bb63edc1583d38e14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.6.0_df3700d75dd2fe973b60002441928e4cf96198b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bf2ceb0034efe20249a561096f6e288cce7a0a4">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.6.0_f004b129a8277edccf1de021173103efe9c9e9f8.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
         jumboMode="true"
@@ -603,6 +1179,24 @@
         revision="25.0.2"
         sha1="734e80dffea7bd76c18ae256822a124c30d85850">
         <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_008384a9abb7ff5dcce233c2870a48422a638626/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-9.6.0_db5c70332d498515c27bb948c7d84a4690f62fd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="/Users/siddhi/AndroidStudioProjects/MortgageCalc/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.6.0_87af01733b052ccc3216ab570f9ef73c59f281ab.jar" />
     </item>
 
 </items>

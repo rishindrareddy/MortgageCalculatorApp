@@ -171,12 +171,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/lengthOfMortgageLoan" />
 
-            <EditText
-                android:id="@+id/lengthOfMortgageLoanEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:text="@string/intZero" />
+            <Spinner
+                android:id="@+id/lengthOfMortgageLoanSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
         </TableRow>
 
         <TableRow android:id="@+id/tableRow9"
@@ -187,15 +186,9 @@
                 android:id="@+id/calculateButton"
                 android:layout_width="@dimen/tagButtonWidth"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="10sp"
                 android:text="@string/calculate" />
-
-            <Button
-                android:id="@+id/cancelButton"
-                android:layout_width="@dimen/tagButtonWidth"
-                android:layout_height="wrap_content"
-                android:text="@string/cancel"
-                android:layout_weight="1"/>
-
         </TableRow>
 
         <TableRow android:id="@+id/tableRow10"
@@ -228,6 +221,7 @@
                 android:id="@+id/saveButton"
                 android:layout_width="@dimen/tagButtonWidth"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
                 android:text="@string/save" />
 
         </TableRow>

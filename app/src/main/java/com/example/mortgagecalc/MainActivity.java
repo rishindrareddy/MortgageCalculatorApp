@@ -1,6 +1,8 @@
 package com.example.mortgagecalc;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -23,6 +25,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity
     public static final String ANNUAL_INTEREST_RATE = "ANNUAL_INTEREST_RATE";
     public static final String MORTGAGE_LOAN_LENGTH = "MORTGAGE_LOAN_LENGTH";
 
+    public boolean editFlag = false;
+    public int rowid;
+
     public double housePrice;
     public double downPaymentAmount;
     public double annualInterestRate;
@@ -45,7 +51,8 @@ public class MainActivity extends AppCompatActivity
     private EditText housePriceEditText;
     private EditText downPaymentAmountEditText;
     private EditText annualInterestRateEditText;
-    private EditText lengthOfMortgageLoanEditText;
+
+    private Spinner lengthOfMortgageLoanSpinner;
     private EditText monthlyPaymentEditText;
     private EditText totalPaymentEditText;
 
@@ -55,6 +62,11 @@ public class MainActivity extends AppCompatActivity
     public Spinner mState;
     public EditText mZip;
     public double mAmount;
+
+    ArrayAdapter<CharSequence> adapter1;
+    ArrayAdapter<CharSequence> adapter2;
+    ArrayAdapter<CharSequence> adapter3;
+    protected DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,13 +79,11 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                resetForm();
             }
         });
 
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -84,23 +94,26 @@ public class MainActivity extends AppCompatActivity
 
 
         Spinner spinner1 = (Spinner) findViewById(R.id.propertyTypeSpinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.pType_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(adapter);
+        adapter1 = ArrayAdapter.createFromResource(this, R.array.pType_array, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner1.setAdapter(adapter1);
 
         Spinner spinner2 = (Spinner) findViewById(R.id.stateSpinner);
-        adapter = ArrayAdapter.createFromResource(this, R.array.state_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner2.setAdapter(adapter);
+        adapter2 = ArrayAdapter.createFromResource(this, R.array.state_array, android.R.layout.simple_spinner_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner2.setAdapter(adapter2);
 
-        if(savedInstanceState == null){
+        Spinner spinner3 = (Spinner) findViewById(R.id.lengthOfMortgageLoanSpinner);
+        adapter3 = ArrayAdapter.createFromResource(this, R.array.lengthOfMortgageLoan_array, android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner3.setAdapter(adapter3);
+
+        if (savedInstanceState == null) {
             housePrice = 0.0;
             downPaymentAmount = 0.0;
             annualInterestRate = 0.0;
             lengthOfMortgageLoan = 0;
-        }
-        else
-        {
+        } else {
             housePrice = savedInstanceState.getDouble(HOUSE_PRICE);
             downPaymentAmount = savedInstanceState.getDouble(DOWN_PAYMENT_AMOUNT);
             annualInterestRate = savedInstanceState.getDouble(ANNUAL_INTEREST_RATE);
@@ -114,29 +127,80 @@ public class MainActivity extends AppCompatActivity
         mState = (Spinner) findViewById(R.id.stateSpinner);
         mZip = (EditText) findViewById(R.id.zipEditText);
 
-        housePriceEditText = (EditText)findViewById(R.id.housePriceEditText);
-        downPaymentAmountEditText = (EditText)findViewById(R.id.downPaymentAmountEditText);
-        annualInterestRateEditText = (EditText)findViewById(R.id.annualInterestRateEditText);
-        lengthOfMortgageLoanEditText = (EditText)findViewById(R.id.lengthOfMortgageLoanEditText);
-        monthlyPaymentEditText = (EditText)findViewById(R.id.monthlyPaymentEditText);
+        housePriceEditText = (EditText) findViewById(R.id.housePriceEditText);
+        downPaymentAmountEditText = (EditText) findViewById(R.id.downPaymentAmountEditText);
+        annualInterestRateEditText = (EditText) findViewById(R.id.annualInterestRateEditText);
+        lengthOfMortgageLoanSpinner = (Spinner) findViewById(R.id.lengthOfMortgageLoanSpinner);
+        monthlyPaymentEditText = (EditText) findViewById(R.id.monthlyPaymentEditText);
 
-        final Button calculateButton = (Button)findViewById(R.id.calculateButton);
+        final Button calculateButton = (Button) findViewById(R.id.calculateButton);
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculate();
             }
         });
-        Button cancelButton = (Button)findViewById(R.id.cancelButton);
 
-        Button saveButton = (Button)findViewById(R.id.saveButton);
+        Button saveButton = (Button) findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verifyAndSave();
+                boolean status = verifyAndSave();
+                if (status) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Calculation saved successfully!", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
+
+        Intent i = getIntent();
+        Bundle extras = i.getExtras();
+        if (extras != null) {
+            if (extras.containsKey("rowid")) {
+
+                int a = extras.getInt("rowid");
+                setform(a);
+            }
+        }
+    }
+
+    public boolean setform(int a) {
+
+        this.editFlag = true;
+        this.rowid = a;
+        DatabaseHelper helper = new DatabaseHelper(this);
+        Cursor result = helper.sendRowEntry(a);
+        result.moveToFirst();
+
+        //setting form with pre-filled values
+        String type = result.getString(1);
+        if (!type.equals(null)) {
+            int typePosition = adapter1.getPosition(type);
+            mType.setSelection(typePosition);
+        }
+        mStr.setText(result.getString(2));
+        mCity.setText(result.getString(3));
+
+        String state = result.getString(4);
+        if (!state.equals(null)) {
+            int statePosition = adapter2.getPosition(state);
+            mState.setSelection(statePosition);
+        }
+        mZip.setText(result.getString(5));
+
+        housePriceEditText.setText(result.getString(6));
+        downPaymentAmountEditText.setText(result.getString(7));
+        annualInterestRateEditText.setText(result.getString(9));
+
+        String years = result.getString(10);
+        if (!years.equals(null)) {
+            int yearsPosition = adapter3.getPosition(years);
+            lengthOfMortgageLoanSpinner.setSelection(yearsPosition);
+        }
+
+        monthlyPaymentEditText.setText(result.getString(11));
+        return true;
     }
 
     @Override
@@ -178,7 +242,12 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        switch(id) {
+        switch (id) {
+            case R.id.nav_first_fragment:
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
             case R.id.nav_second_fragment:
                 intent = new Intent(this, MapsActivity.class);
                 startActivity(intent);
@@ -191,7 +260,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void calculate(){
+    private void calculate() {
 
         double monthlyIntRate = 0.0, loanAmount = 0.0, monthlyPayment = 0.0, totalPayment = 0.0;
         int months = 0;
@@ -199,9 +268,9 @@ public class MainActivity extends AppCompatActivity
         housePrice = Double.parseDouble(housePriceEditText.getText().toString());
         downPaymentAmount = Double.parseDouble(downPaymentAmountEditText.getText().toString());
         annualInterestRate = Double.parseDouble(annualInterestRateEditText.getText().toString());
-        lengthOfMortgageLoan = Integer.parseInt(lengthOfMortgageLoanEditText.getText().toString());
+        lengthOfMortgageLoan = Integer.parseInt(lengthOfMortgageLoanSpinner.getSelectedItem().toString());
 
-        if(housePrice != 0.0 && downPaymentAmount != 0.0 && annualInterestRate != 0.0 && lengthOfMortgageLoan !=0) {
+        if (housePrice != 0.0 && downPaymentAmount != 0.0 && annualInterestRate != 0.0 && lengthOfMortgageLoan != 0) {
 
             monthlyIntRate = annualInterestRate / (12 * 100);
             months = lengthOfMortgageLoan * 12;
@@ -212,9 +281,7 @@ public class MainActivity extends AppCompatActivity
 
             mAmount = monthlyPayment;
 
-        }
-        else
-        {
+        } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle(R.string.missingEntries);
 
@@ -226,9 +293,17 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public void verifyAndSave(){
+    public Double computeLoanAmount(String price, String dPayment) {
 
-        String[] values = new String[10];
+        Double loanAmount;
+        loanAmount = Double.parseDouble(price) - Double.parseDouble(dPayment);
+        return loanAmount;
+    }
+
+
+    public boolean verifyAndSave() {
+
+        String[] values = new String[11];
         values[0] = mType.getSelectedItem().toString();
         values[1] = mStr.getText().toString();
         values[2] = mCity.getText().toString();
@@ -236,12 +311,13 @@ public class MainActivity extends AppCompatActivity
         values[4] = mZip.getText().toString();
         values[5] = housePriceEditText.getText().toString();
         values[6] = downPaymentAmountEditText.getText().toString();
-        values[7] = annualInterestRateEditText.getText().toString();
-        values[8] = lengthOfMortgageLoanEditText.getText().toString();
-        values[9] = Double.toString(mAmount);
+        values[7] = computeLoanAmount(values[5], values[6]).toString();
+        values[8] = annualInterestRateEditText.getText().toString();
+        values[9] = lengthOfMortgageLoanSpinner.getSelectedItem().toString();
+        values[10] = Double.toString(mAmount);
 
-        String strAddr = values[1] + " "+ values[2]+ " "+ values[3]+ " "+ values[4];
-        if( getLocationFromAddress(strAddr) == null){
+        String strAddr = values[1] + " " + values[2] + " " + values[3] + " " + values[4];
+        if (getLocationFromAddress(strAddr) == null) {
             AlertDialog alertDialog = new AlertDialog.Builder(this).create();
             alertDialog.setTitle("Alert");
             alertDialog.setMessage("Invalid Address!");
@@ -252,53 +328,60 @@ public class MainActivity extends AppCompatActivity
                         }
                     });
             alertDialog.show();
-        }
-        else {
 
-            DatabaseHelper myDB = new DatabaseHelper(this);
-            myDB.insertData(values);
+            return false;
+        } else {
+            calculate();
 
-            LatLng p;
-            //just to check
-            Cursor res = myDB.getAllData();
-            System.out.println("Res: "+ res);
+            DatabaseHelper databaseHelper = new DatabaseHelper(this);
+            if (editFlag) {
 
-            if (res.moveToFirst()){
-                do{
-                    String data = res.getString(2)+" " + res.getString(3)+ " "+ res.getString(4)+" "+ res.getString(5) + " ";
-                    System.out.println("data entry: "+ data);
-                    p = getLocationFromAddress(data);
-                    System.out.println("LatLong: "+ p);
-                }while(res.moveToNext());
+                return databaseHelper.updateRow(this.rowid, values);
+
             }
-            res.close();
 
+            databaseHelper.insertData(values);
         }
+        return true;
 
     }
 
-    public LatLng getLocationFromAddress(String strAddress){
+    public LatLng getLocationFromAddress(String strAddress) {
 
         Geocoder coder = new Geocoder(this);
         List<Address> address;
         LatLng p1 = null;
 
         try {
-            address = coder.getFromLocationName(strAddress,5);
-            System.out.println("address: "+ address);
+            address = coder.getFromLocationName(strAddress, 5);
             if (address.size() == 0) {
                 return null;
             }
-            Address location= address.get(0);
+            Address location = address.get(0);
             location.getLatitude();
             location.getLongitude();
 
-            p1 = new LatLng(location.getLatitude() , location.getLongitude());
-        }
-        catch (IOException ex) {
+            p1 = new LatLng(location.getLatitude(), location.getLongitude());
+        } catch (IOException ex) {
 
-           ex.printStackTrace();
+            ex.printStackTrace();
         }
         return p1;
     }
+
+    public void resetForm() {
+
+        mType.setSelection(0);
+        mStr.setText("");
+        mCity.setText("");
+        mState.setSelection(0);
+        mZip.setText("");
+        housePriceEditText.setText("0.0");
+        downPaymentAmountEditText.setText("0.0");
+        annualInterestRateEditText.setText("0.0");
+        lengthOfMortgageLoanSpinner.setSelection(0);
+        monthlyPaymentEditText.setText("");
+
+    }
+
 }
